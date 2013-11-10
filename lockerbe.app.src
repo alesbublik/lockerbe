@@ -1,0 +1,13 @@
+{application, lockerbe, [
+    {description, "Distributed lock manager"},
+    {vsn, "0.1.0"},
+    {modules, []},
+    {registered, [lockerbe_sup]},
+    {applications, [
+        kernel,
+        stdlib,
+        cowboy
+    ]}
+    {mod, {lockerbe_app, []}},
+    {env, []}
+]}.
